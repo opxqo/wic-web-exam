@@ -68,7 +68,7 @@ export default async function QuizPage({
     const selectedJudges = stratifiedSample(judges, judgeCount);
 
     // Combine
-    const finalQuestions = [...selectedChoices, ...selectedJudges] || [];
+    const finalQuestions = [...selectedChoices, ...selectedJudges];
 
     if (finalQuestions.length === 0) {
         console.warn("No questions were selected. This might indicate issues with the data source.");
