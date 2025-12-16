@@ -1,5 +1,6 @@
 [
   {
+    "module": "Spring",
     "question": "Spring框架的核心特性不包括以下哪项？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -12,6 +13,7 @@
     "explanation": "答案解析：Spring核心是IoC和AOP，事务管理是其重要功能，但数据库连接池通常依赖第三方（如HikariCP），非Spring底层实现。"
   },
   {
+    "module": "Spring",
     "question": "以下哪种不是Spring依赖注入（ ）I）的实现方式？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -24,6 +26,7 @@
     "explanation": "答案解析：接口注入是早期DI方式，Spring虽支持但不推荐，主流为构造函数、setter和注解注入。"
   },
   {
+    "module": "Spring",
     "question": "Spring中，Bean的默认作用域是（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -34,6 +37,7 @@
     "explanation": "答案解析：默认作用域为singleton（单例），容器中仅存在一个实例；prototype为原型，每次获取创建新实例。"
   },
   {
+    "module": "Spring",
     "question": "`@Autowired`注解默认的注入方式是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -46,6 +50,7 @@
     "explanation": "答案解析：`@Autowired`默认按类型匹配，若存在多个同类型Bean，需配合`@Qualifier`按名称注入。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`ApplicationContext`相比`BeanFactory`的优势不包括（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -58,6 +63,7 @@
     "explanation": "答案解析：BeanFactory是延迟加载（getBean时创建），ApplicationContext是预加载单例Bean，C是BeanFactory的特点。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个注解用于指定Bean的初始化方法？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -70,6 +76,7 @@
     "explanation": "答案解析：`@Bean`的`initMethod`属性指定初始化方法；`@PostConstruct`是JSR注解，作用类似但属于Java规范。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个接口用于监听Spring容器的事件？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -82,6 +89,7 @@
     "explanation": "答案解析：`ApplicationListener`用于监听事件，`ApplicationEventPublisher`用于发布事件，`ApplicationEvent`是事件基类。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`@Profile`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -94,6 +102,7 @@
     "explanation": "答案解析：`@Profile`用于区分环境（如dev、test、prod），仅激活匹配的Bean。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个不是Spring的AOP通知类型？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -106,6 +115,7 @@
     "explanation": "答案解析：AOP通知类型包括前置、后置、返回、异常、环绕通知，无循环通知。"
   },
   {
+    "module": "Spring",
     "question": "Spring中，`@Primary`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -118,6 +128,7 @@
     "explanation": "答案解析：当存在多个同类型Bean时，`@Primary`指定的Bean会被优先注入。"
   },
   {
+    "module": "Spring",
     "question": "`ClassPathXmlApplicationContext`的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -130,6 +141,7 @@
     "explanation": "答案解析：`ClassPathXmlApplicationContext`用于加载类路径下的XML配置文件，`FileSystemXmlApplicationContext`加载文件系统路径。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个注解用于将类标识为Spring的组件？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -142,6 +154,7 @@
     "explanation": "答案解析：`@Component`是通用组件注解，`@Service`、`@Controller`、`@Repository`是其特殊化（分别用于服务、控制器、持久层）。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`FactoryBean`与普通Bean的区别是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -154,6 +167,7 @@
     "explanation": "答案解析：`FactoryBean`是特殊Bean，用于创建复杂Bean（如`SqlSessionFactoryBean`），通过`getObject()`方法返回实际Bean。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`Resource`接口不支持访问哪种资源？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -166,6 +180,7 @@
     "explanation": "答案解析：`Resource`支持类路径、文件、网络等资源，数据库资源通过数据源访问，不属此类。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个不是Spring的Bean作用域？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -178,6 +193,7 @@
     "explanation": "答案解析：Spring的标准作用域包括singleton、prototype、request、session、globalSession、application，无thread。"
   },
   {
+    "module": "Spring",
     "question": "`@Qualifier`注解通常与哪个注解配合使用？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -190,6 +206,7 @@
     "explanation": "答案解析：`@Autowired`按类型注入，若存在多个同类型Bean，`@Qualifier`指定Bean名称解决歧义。"
   },
   {
+    "module": "Spring",
     "question": "关于`BeanFactory`和`ApplicationContext`的关系，正确的是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -202,6 +219,7 @@
     "explanation": "答案解析：`ApplicationContext`继承`BeanFactory`，扩展了企业级功能（如事件、国际化）。"
   },
   {
+    "module": "Spring",
     "question": "Spring中，`@PostConstruct`注解标注的方法执行时机是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -214,6 +232,7 @@
     "explanation": "答案解析：`@PostConstruct`在Bean属性填充完成后、初始化方法（如`afterPropertiesSet`）执行前调用。"
   },
   {
+    "module": "Spring",
     "question": "`@Configuration`注解标注的类中，`@Bean`方法的特点是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -226,6 +245,7 @@
     "explanation": "答案解析：`@Configuration`类中的`@Bean`方法会被代理，多次调用返回同一实例（单例），无需手动控制。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个接口用于获取Bean在容器中的名称？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -238,6 +258,7 @@
     "explanation": "答案解析：`BeanNameAware`的`setBeanName`方法可获取Bean的名称；`BeanFactoryAware`获取BeanFactory。"
   },
   {
+    "module": "Spring",
     "question": "Spring的事务传播行为中，`REQUIRES_NEW`表示（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -250,6 +271,7 @@
     "explanation": "答案解析：`REQUIRES_NEW`会创建新事务，若当前有事务则挂起；`REQUIRED`是加入现有事务。"
   },
   {
+    "module": "Spring",
     "question": "关于Spring的`@Value`注解，以下说法错误的是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -262,6 +284,7 @@
     "explanation": "答案解析：`@Value`可用于字段、方法参数、构造函数参数注入。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个注解用于禁用Spring的自动装配？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -274,6 +297,7 @@
     "explanation": "答案解析：`@Autowired(required=false)`表示注入非必需，若不存在则不注入，间接实现“可选”；无`@NoAutoWire`等注解。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`@Service`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -286,6 +310,7 @@
     "explanation": "答案解析：`@Service`用于服务层，`@Controller`用于控制器，`@Repository`用于持久层，均为`@Component`的特例。"
   },
   {
+    "module": "Spring",
     "question": "Spring中，原型（prototype）作用域的Bean的生命周期特点是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -298,6 +323,7 @@
     "explanation": "答案解析：原型Bean在`getBean`时创建，容器不负责销毁，需手动管理。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`Bean`生命周期中，哪个阶段在属性填充之后、初始化方法之前执行？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -310,6 +336,7 @@
     "explanation": "答案解析：Bean生命周期关键阶段：实例化→属性填充→`@PostConstruct`→初始化方法（如`afterPropertiesSet`）→使用→销毁。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`@Transactional`注解默认的事务传播行为是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -322,6 +349,7 @@
     "explanation": "答案解析：`REQUIRED`表示：如果当前存在事务，加入该事务；否则创建新事务，是默认传播行为。"
   },
   {
+    "module": "Spring",
     "question": "关于Spring的`singleton`作用域Bean，以下说法错误的是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -334,6 +362,7 @@
     "explanation": "答案解析：`singleton`是单例，首次加载后复用同一实例；`prototype`才会每次创建新实例。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`@Qualifier`注解的`value`属性作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -346,6 +375,7 @@
     "explanation": "答案解析：`@Qualifier(\"userService\")`配合`@Autowired`，指定注入名称为`userService`的Bean。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个不是Spring事务管理的方式？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -358,6 +388,7 @@
     "explanation": "答案解析：Spring事务需显式配置（编程式或声明式），无“自动事务”模式。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`BeanFactory`加载Bean的方式是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -370,6 +401,7 @@
     "explanation": "答案解析：`BeanFactory`是延迟加载，`ApplicationContext`是预加载单例Bean。"
   },
   {
+    "module": "Spring",
     "question": "Spring AOP中，“织入”（Weaving）是指（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -382,6 +414,7 @@
     "explanation": "答案解析：织入是AOP的核心步骤，将切面逻辑与目标方法结合，Spring AOP采用运行时织入。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个注解用于标记Bean为多例（原型）作用域？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -394,6 +427,7 @@
     "explanation": "答案解析：`@Scope`注解指定作用域，`prototype`表示原型（多例），`singleton`表示单例（默认）。"
   },
   {
+    "module": "Spring",
     "question": "关于Spring的`@Component`和`@Bean`的区别，以下说法错误的是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -406,6 +440,7 @@
     "explanation": "答案解析：`@Component`适用于自定义类，`@Bean`适用于第三方类（如`DataSource`），使用场景不同。"
   },
   {
+    "module": "Spring",
     "question": "以下哪个不是Spring的`Bean`作用域的应用场景？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -418,6 +453,7 @@
     "explanation": "答案解析：`session`作用域的Bean与用户会话绑定，不适合全局缓存；全局缓存用`singleton`。"
   },
   {
+    "module": "Spring",
     "question": "Spring的`@Transactional`注解的`rollbackFor`属性作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -430,6 +466,7 @@
     "explanation": "答案解析：`rollbackFor =\n              Exception.class`表示所有异常都回滚；默认仅对`RuntimeException`和`Error`回滚。"
   },
   {
+    "module": "Spring",
     "question": "在Spring中，Bean的默认作用域是prototype。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -440,6 +477,7 @@
     "explanation": "答案解析：默认作用域是singleton"
   },
   {
+    "module": "Spring",
     "question": "Spring的IoC容器负责创建Bean实例，并管理Bean的生命周期。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -449,6 +487,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "BeanFactory是Spring IoC容器的顶层接口，ApplicationContext是其实现类之一。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -458,6 +497,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "在Spring中，使用@Autowired注解注入依赖时，默认按照名称匹配。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -468,6 +508,7 @@
     "explanation": "答案解析：默认按照类型匹配"
   },
   {
+    "module": "Spring",
     "question": "Spring支持基于XML和注解两种方式配置Bean。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -477,6 +518,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "Spring的事务管理只能通过编程式事务实现。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -487,6 +529,7 @@
     "explanation": "答案解析：还可通过声明式事务实现且声明式事务更常用"
   },
   {
+    "module": "Spring",
     "question": "BeanFactory 作为 Spring IoC 容器的基础接口，其特点是启动时预加载所有单例 Bean。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -497,6 +540,7 @@
     "explanation": "答案解析：BeanFactory 是延迟加载仅在调用 `getBean` 时创建\n              Bean；ApplicationContext 才会预加载单例 Bean"
   },
   {
+    "module": "Spring",
     "question": "ApplicationContext 继承自 BeanFactory，并扩展了国际化、资源访问等企业级功能。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -506,6 +550,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "Spring 中，`@PostConstruct` 注解标注的方法会在 Bean 属性填充完成后、初始化方法执行前被调用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -515,6 +560,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "使用 `@Qualifier` 注解可以解决 `@Autowired` 注解因类型匹配多个 Bean 而产生的歧义问题。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -524,6 +570,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "构造器注入相比 setter 注入，能更好地保证 Bean 的不可变性，且可避免循环依赖问题。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -533,6 +580,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "Spring 中，`@Scope(\"singleton\")` 标注的 Bean 在整个容器中只会存在一个实例。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -542,6 +590,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "Spring 的 `@Configuration` 注解标注的类，其内部被 `@Bean` 注解标注的方法会被代理，以确保 Bean 的单例性。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -551,6 +600,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "`ClassPathXmlApplicationContext` 是 ApplicationContext 的实现类，用于从类路径加载 XML 配置文件。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -560,6 +610,7 @@
     ]
   },
   {
+    "module": "Spring",
     "question": "Spring 中，依赖注入的本质是容器在创建 Bean 时，自动将其依赖的其他 Bean 注入到其中。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -569,6 +620,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的核心前端控制器是（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -579,6 +631,7 @@
     "explanation": "答案解析：`DispatcherServlet`是Spring\n              MVC的核心，负责接收请求、分发到Controller、处理响应。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestMapping`注解的`value`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -591,6 +644,7 @@
     "explanation": "答案解析：`value`属性定义请求路径，可简写为`@RequestMapping(\"/path\")`；`method`属性指定请求方法。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个注解用于获取URL路径中的参数（如`/user/{id}`中的id）？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -603,6 +657,7 @@
     "explanation": "答案解析：`@PathVariable`获取路径参数；`@RequestParam`获取请求参数（如`?id=1`）。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`ModelAndView`的作用是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -615,6 +670,7 @@
     "explanation": "答案解析：`ModelAndView`包含`viewName`（视图名）和`model`（模型数据），用于Controller向视图传递数据。"
   },
   {
+    "module": "SpringMVC",
     "question": "视图解析器（`ViewResolver`）的主要作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -627,6 +683,7 @@
     "explanation": "答案解析：视图解析器根据逻辑视图名（如“index”）结合前缀（如“/WEB-INF/views/”）和后缀（如“.jsp”）生成物理路径。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ResponseBody`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -639,6 +696,7 @@
     "explanation": "答案解析：`@ResponseBody`使返回值不经过视图解析，直接作为响应体（如返回JSON时常用）。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的拦截器（`Interceptor`）需要实现哪个接口？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -651,6 +709,7 @@
     "explanation": "答案解析：拦截器需实现`HandlerInterceptor`，重写`preHandle`、`postHandle`、`afterCompletion`方法。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个方法在Controller方法执行后、视图渲染前调用？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -663,6 +722,7 @@
     "explanation": "答案解析：`preHandle`在Controller前执行，`postHandle`在Controller后、视图前执行，`afterCompletion`在视图后执行。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RestController`注解是以下哪两个注解的组合？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -675,6 +735,7 @@
     "explanation": "答案解析：`@RestController` = `@Controller` +\n              `@ResponseBody`，适用于RESTful接口，返回值直接作为响应体。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，处理文件上传的接口是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -687,6 +748,7 @@
     "explanation": "答案解析：`MultipartFile`用于接收上传的文件，提供`getOriginalFilename()`、`transferTo()`等方法。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ExceptionHandler`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -699,6 +761,7 @@
     "explanation": "答案解析：`@ExceptionHandler`在Controller内部定义异常处理方法，配合`@ControllerAdvice`可实现全局处理。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个注解用于将请求参数绑定到模型对象？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -711,6 +774,7 @@
     "explanation": "答案解析：`@ModelAttribute`将请求参数绑定到对象，并自动添加到模型中，如`public String\n              save(@ModelAttribute User user)`。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，静态资源（如CSS、JS）的默认处理方式是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -723,6 +787,7 @@
     "explanation": "答案解析：默认`DispatcherServlet`映射`/`，会拦截静态资源，需通过`mvc:resources`或`WebMvcConfigurer`配置排除。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestHeader`注解用于获取（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -735,6 +800,7 @@
     "explanation": "答案解析：`@RequestHeader`获取请求头（如`@RequestHeader(\"User-Agent\") String\n              userAgent`）。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@CookieValue`注解用于获取（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -747,6 +813,7 @@
     "explanation": "答案解析：`@CookieValue(\"JSESSIONID\") String\n              sessionId`用于获取指定Cookie的值。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个不是Spring MVC的视图类型？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -759,6 +826,7 @@
     "explanation": "答案解析：数据库视图是数据库层面的概念，非Spring MVC视图。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@SessionAttributes`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -771,6 +839,7 @@
     "explanation": "答案解析：`@SessionAttributes(\"user\")`将模型中名为“user”的属性存入Session，实现跨请求共享。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，Controller方法的返回值类型不包括（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -783,6 +852,7 @@
     "explanation": "答案解析：`HttpServletRequest`是方法参数类型，用于接收请求对象，不能作为返回值。"
   },
   {
+    "module": "SpringMVC",
     "question": "视图解析器的`order`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -795,6 +865,7 @@
     "explanation": "答案解析：`order`值越小，视图解析器优先级越高，先尝试解析视图。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ResponseStatus`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -807,6 +878,7 @@
     "explanation": "答案解析：`@ResponseStatus(code = 404)`可指定方法返回的HTTP状态码。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`MultipartResolver`的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -819,6 +891,7 @@
     "explanation": "答案解析：`MultipartResolver`用于解析文件上传请求，Spring\n              Boot中自动配置`StandardServletMultipartResolver`。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ControllerAdvice`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -831,6 +904,7 @@
     "explanation": "答案解析：`@ControllerAdvice`是全局控制器增强，可配合`@ExceptionHandler`、`@ModelAttribute`等实现全局处理。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个方法在请求处理完成（包括视图渲染）后调用，无论是否发生异常？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -843,6 +917,7 @@
     "explanation": "答案解析：`afterCompletion`在整个请求处理完成后调用，适合资源清理；若`preHandle`返回`false`，则不调用。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`redirect:`前缀的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -855,6 +930,7 @@
     "explanation": "答案解析：`return\n              \"redirect:/index\"`表示重定向到`/index`；`forward:`前缀表示转发。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestParam`的`required`属性默认值是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -867,6 +943,7 @@
     "explanation": "答案解析：`@RequestParam`默认要求参数必须存在，否则抛出异常；可设置`required=false`允许参数缺失。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`HandlerMapping`的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -879,6 +956,7 @@
     "explanation": "答案解析：`HandlerMapping`负责根据请求路径查找对应的处理器（Controller方法），如`RequestMappingHandlerMapping`。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个不是`HandlerInterceptor`接口的方法？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -891,6 +969,7 @@
     "explanation": "答案解析：接口方法为`preHandle`、`postHandle`、`afterCompletion`，无`afterHandle`。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ModelAttribute`注解标注在方法上时，其作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -903,6 +982,7 @@
     "explanation": "答案解析：`@ModelAttribute`方法在Controller的每个请求方法执行前调用，常用于初始化公共模型数据。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，处理JSON数据通常依赖哪个库？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -915,6 +995,7 @@
     "explanation": "答案解析：Spring\n              MVC支持Jackson（默认）、Gson、FastJSON等，通过对应的消息转换器实现JSON序列化。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestMapping`的`consumes`属性用于（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -927,6 +1008,7 @@
     "explanation": "答案解析：`consumes =\n              \"application/json\"`表示仅处理Content-Type为JSON的请求；`produces`指定响应类型。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`View`接口的`render`方法的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -939,6 +1021,7 @@
     "explanation": "答案解析：`View.render(model, request, response)`负责将模型数据渲染到页面或响应体。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个注解用于指定Controller方法返回的JSON数据的日期格式？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -951,6 +1034,7 @@
     "explanation": "答案解析：`@JsonFormat(pattern =\n              \"yyyy-MM-dd\")`是Jackson注解，用于指定JSON日期格式。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@PathVariable`的`value`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -963,6 +1047,7 @@
     "explanation": "答案解析：如`@PathVariable(value =\n              \"id\")`绑定URL中`{id}`的参数；若参数名与占位符一致，可省略。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，默认的视图解析器是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -975,6 +1060,7 @@
     "explanation": "答案解析：默认使用`InternalResourceViewResolver`解析JSP视图，其他视图解析器需手动配置。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestParam`的`defaultValue`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -987,6 +1073,7 @@
     "explanation": "答案解析：如`@RequestParam(defaultValue = \"1\") int\n              page`，当无page参数时，默认值为1。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪种方式不能实现Spring MVC的全局异常处理？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -999,6 +1086,7 @@
     "explanation": "答案解析：C是局部异常处理，仅作用于当前Controller；其他选项可实现全局处理。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`Model`和`ModelMap`的关系是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1011,6 +1099,7 @@
     "explanation": "答案解析：`Model`是接口，`ModelMap`是实现类，功能类似，用于存储模型数据。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`DispatcherServlet`的核心职责不包括（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1023,6 +1112,7 @@
     "explanation": "答案解析：`DispatcherServlet`负责请求分发、视图解析等调度工作，业务逻辑由Controller调用Service层完成，并非其核心职责。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestMapping`的`params`属性作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1035,6 +1125,7 @@
     "explanation": "答案解析：`params`用于限制请求必须包含指定参数，如`@RequestMapping(value =\n              \"/user\", params = \"action=delete\")`仅匹配含`action=delete`参数的请求。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪种方式不能将请求参数绑定到Controller方法的JavaBean参数？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1047,6 +1138,7 @@
     "explanation": "答案解析：`@PathVariable`用于绑定URL路径参数，而非请求参数（如`?name=xxx`），无法直接绑定JavaBean。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`ViewResolver`接口的`resolveViewName`方法返回（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1059,6 +1151,7 @@
     "explanation": "答案解析：`resolveViewName`根据逻辑视图名解析并返回`View`对象，由`View`负责渲染数据。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ResponseBody`注解依赖的消息转换器接口是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1071,6 +1164,7 @@
     "explanation": "答案解析：`@ResponseBody`通过`HttpMessageConverter`（如`MappingJackson2HttpMessageConverter`）将返回值转换为JSON等格式，写入响应体。"
   },
   {
+    "module": "SpringMVC",
     "question": "拦截器的`preHandle`方法返回`false`时，后续流程会（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1083,6 +1177,7 @@
     "explanation": "答案解析：`preHandle`返回`false`会中断请求链，Controller方法、后续拦截器的`preHandle`、`postHandle`等均不执行。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ModelAttribute`注解标注在方法参数上时，若未指定名称，默认的模型属性名称是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1095,6 +1190,7 @@
     "explanation": "答案解析：如`public String save(@ModelAttribute User\n              user)`，模型中属性名为`user`（`User`类首字母小写）；可通过`@ModelAttribute(\"myUser\")`指定名称。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个不是`HandlerInterceptor`接口的方法执行时机？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1107,6 +1203,7 @@
     "explanation": "答案解析：`HandlerInterceptor`无`beforeDispatch`方法，`preHandle`在`DispatcherServlet`分发请求到Controller前执行。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`MultipartFile`的`transferTo（ ）ile dest)`方法的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1119,6 +1216,7 @@
     "explanation": "答案解析：`transferTo`是便捷方法，用于将上传的临时文件保存到指定目标文件；需注意目标路径的权限。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`@RequestMapping`支持Ant风格路径，以下哪个符号表示匹配任意多级目录？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1131,6 +1229,7 @@
     "explanation": "答案解析：Ant风格中，`*`匹配任意字符（单级），`**`匹配任意多级目录，`?`匹配单个字符。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪种情况`@RequestParam`会抛出`MissingServletRequestParameterException`？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1143,6 +1242,7 @@
     "explanation": "答案解析：`@RequestParam`默认`required =\n              true`，若参数未传递则抛该异常；可设置`required = false`避免。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ResponseStatus`注解标注在异常类上时，作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1155,6 +1255,7 @@
     "explanation": "答案解析：如`@ResponseStatus(code =\n              HttpStatus.NOT_FOUND)`标注在`ResourceNotFoundException`上，抛出该异常时返回404状态码。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`Model`接口的`addAttribute`方法的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1167,6 +1268,7 @@
     "explanation": "答案解析：`addAttribute(\"user\",\n              user)`向模型添加名为`user`的属性，供视图访问；`removeAttribute`用于移除。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个注解用于获取请求体中的JSON数据并绑定到方法参数？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1179,6 +1281,7 @@
     "explanation": "答案解析：`@RequestBody`用于接收请求体中的数据（如JSON），通过消息转换器转换为Java对象，适用于POST/PUT等请求。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@SessionAttributes`注解标注的属性会存储在（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1191,6 +1294,7 @@
     "explanation": "答案解析：`@SessionAttributes(\"user\")`将模型中`user`属性存入`HttpSession`，实现跨请求共享（如多步骤表单）。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestHeader`注解的`required`属性默认值是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1203,6 +1307,7 @@
     "explanation": "答案解析：`@RequestHeader`默认要求请求头必须存在，否则抛异常；可设置`required =\n              false`允许缺失。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC的`SimpleUrlHandlerMapping`的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1215,6 +1320,7 @@
     "explanation": "答案解析：`SimpleUrlHandlerMapping`用于非注解式Controller的URL映射，如`/user\n              -> userController`，通过配置文件或代码指定映射关系。"
   },
   {
+    "module": "SpringMVC",
     "question": "`@ExceptionHandler`注解的方法参数中，不能直接接收的是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1227,6 +1333,7 @@
     "explanation": "答案解析：`@ExceptionHandler`方法可接收异常对象、请求/响应对象、模型等，视图名是方法的返回值，而非参数。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`form`标签库的`path`属性作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1239,6 +1346,7 @@
     "explanation": "答案解析：`path`属性用于数据绑定，与模型对象的属性关联，自动回显值和处理错误信息。"
   },
   {
+    "module": "SpringMVC",
     "question": "以下哪个不是`HttpMessageConverter`的实现类？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1251,6 +1359,7 @@
     "explanation": "答案解析：`ViewResolver`是视图解析器，与`HttpMessageConverter`（消息转换）无关，无此类实现。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，`@RequestMapping`的`headers`属性作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1263,6 +1372,7 @@
     "explanation": "答案解析：`headers`用于限制请求必须包含指定请求头，如仅处理JSON类型的请求。"
   },
   {
+    "module": "SpringMVC",
     "question": "拦截器与过滤器（`Filter`）的区别是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1275,6 +1385,7 @@
     "explanation": "答案解析：拦截器是Spring\n              MVC组件，基于AOP，可集成Spring功能；过滤器是Servlet规范，作用范围更广，不依赖Spring。"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，当Controller方法返回`String`类型时，默认表示（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1287,6 +1398,7 @@
     "explanation": "答案解析：默认返回逻辑视图名（如`return\n              \"index\"`表示解析为`index.jsp`）；若加`@ResponseBody`则表示响应体，加`redirect:`表示重定向。"
   },
   {
+    "module": "SpringMVC",
     "question": "DispatcherServlet的作用是接收请求，并将请求分发给对应的Controller。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1296,6 +1408,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "在Spring MVC中，@RequestMapping注解只能用于类上，不能用于方法上。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -1306,6 +1419,7 @@
     "explanation": "答案解析：可用于类和方法上类上指定统一前缀方法上指定具体路径"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，ModelAndView对象用于封装处理结果和视图名称。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1315,6 +1429,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "使用@RequestParam注解可以获取URL路径中的参数，如`/user/{id}`中的id。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -1325,6 +1440,7 @@
     "explanation": "答案解析：@RequestParam获取请求参数@PathVariable获取URL路径参数"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC中，Controller方法的返回值只能是ModelAndView类型。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -1335,6 +1451,7 @@
     "explanation": "答案解析：还可返回String（视图名、void、JSON对象等"
   },
   {
+    "module": "SpringMVC",
     "question": "前端提交的表单数据，在Spring MVC中可通过实体类对象自动封装接收。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1344,6 +1461,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC 中，`@ResponseBody` 注解可以将 Controller 方法的返回值直接转换为 JSON 格式并写入响应体。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1353,6 +1471,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "视图解析器的 `prefix` 和 `suffix` 属性分别用于配置视图路径的前缀和后缀，如前缀 \"/WEB-INF/views/\"、后缀\n                \".jsp\"。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1362,6 +1481,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "`@ExceptionHandler` 注解只能用于处理当前 Controller 中抛出的异常。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -1372,6 +1492,7 @@
     "explanation": "答案解析：配合 `@ControllerAdvice` 注解可实现全局异常处理"
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC 的拦截器需要实现 `HandlerInterceptor` 接口，并重写 `preHandle`、`postHandle` 和\n                `afterCompletion` 方法。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1381,6 +1502,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "拦截器的`postHandle` 方法在 Controller 方法执行后、视图渲染前被调用，可在此修改 ModelAndView 对象。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1390,6 +1512,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "使用 `@ModelAttribute` 注解可以将请求参数绑定到模型对象，并自动添加到模型中。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1399,6 +1522,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "Spring Boot 中，文件上传需要依赖 `MultipartResolver`，且需在配置中手动注册该 Bean。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -1409,6 +1533,7 @@
     "explanation": "答案解析：Spring Boot 中会自动配置 `MultipartResolver`无需手动注册"
   },
   {
+    "module": "SpringMVC",
     "question": "`@PathVariable` 注解支持设置参数是否必需，通过 `required` 属性控制，默认值为 `true`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1418,6 +1543,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "静态资源的访问路径可以通过 `spring.mvc.static-path-pattern` 配置，如配置为 \"/static/**\"。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1427,6 +1553,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "`afterCompletion` 方法无论请求处理是否发生异常，都会在视图渲染完成后被调用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1436,6 +1563,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "Spring MVC 中，`DispatcherServlet` 的初始化参数 `contextConfigLocation` 用于指定 Spring MVC\n                的配置文件路径。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1445,6 +1573,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "`@RequestHeader` 注解用于获取 HTTP 请求头中的信息，如获取 \"User-Agent\" 信息。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1454,6 +1583,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "Controller 方法的参数中，`HttpServletRequest` 和 `HttpServletResponse` 对象可由 Spring MVC\n                自动注入。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1463,6 +1593,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "视图解析器的 `order` 属性用于指定解析顺序，值越小优先级越高。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1472,6 +1603,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "拦截器的 `preHandle` 方法返回 `false` 时，会终止请求的后续处理流程。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1481,6 +1613,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "`@CookieValue` 注解用于获取 HTTP 请求中的 Cookie 信息。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1490,6 +1623,7 @@
     ]
   },
   {
+    "module": "SpringMVC",
     "question": "当 Controller 方法返回 `ModelAndView` 时，若未设置视图名，Spring MVC 会默认使用请求路径作为视图名。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1499,6 +1633,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis是一款（（ ）",
     "type": "judge",
     "answer": "T",
@@ -1509,6 +1644,7 @@
     "explanation": "答案解析：MyBatis是持久层ORM框架，支持自定义SQL，简化数据库操作。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的核心配置文件通常命名为（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1521,6 +1657,7 @@
     "explanation": "答案解析：核心配置文件默认命名为`mybatis-config.xml`，用于配置数据源、映射器等。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis中，`#{}和${}`的区别是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1533,6 +1670,7 @@
     "explanation": "答案解析：`#{} `会替换为`?`，预编译处理，安全；`${}`直接拼接SQL，有注入风险，适合表名、排序字段等。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的映射文件中，`<select>`标签的`resultType`属性用于（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1545,6 +1683,7 @@
     "explanation": "答案解析：`resultType`指定结果类型（如`int`、`User`），简单类型用`resultType`，复杂映射用`resultMap`。"
   },
   {
+    "module": "MyBatis",
     "question": "Mapper接口与映射文件的关联是通过（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1557,6 +1696,7 @@
     "explanation": "答案解析：映射文件的`namespace`必须等于Mapper接口的全类名，方法名与SQL标签的`id`一致。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis中，获取自动生成的主键值可通过（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -1569,6 +1709,7 @@
     "explanation": "答案解析：自增主键用`useGeneratedKeys=\"true\" keyProperty=\"id\"`；非自增主键（如UUID）用`<selectKey>`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的一级缓存的作用域是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1581,6 +1722,7 @@
     "explanation": "答案解析：一级缓存是`SqlSession`级，同一`SqlSession`内相同查询会缓存；二级缓存是`Mapper`级。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个标签用于定义可重用的SQL片段？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1593,6 +1735,7 @@
     "explanation": "答案解析：`<sql id=\"baseColumn\">id,name</sql>`定义片段，`<include refid=\"baseColumn\"/>`引入。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的动态SQL中，`<where>`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1605,6 +1748,7 @@
     "explanation": "答案解析：`<where>`会自动添加`WHERE`，并去除内部SQL开头的`AND/OR`，简化条件拼接。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`SqlSession`的特点是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1617,6 +1761,7 @@
     "explanation": "答案解析：`SqlSession`非线程安全，需为每个线程创建，使用后需关闭（`close()`）。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<foreach>`标签不支持以下哪种集合类型？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1629,6 +1774,7 @@
     "explanation": "答案解析：`<foreach>`用于遍历集合（List、Array、Map），基本数据类型无法直接遍历。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`typeAliases`配置的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1641,6 +1787,7 @@
     "explanation": "答案解析：如`<typeAlias type=\"com.example.User\" alias=\"User\"/>`，映射文件中可直接用`resultType=\"User\"`。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个标签用于更新操作？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1653,6 +1800,7 @@
     "explanation": "答案解析：`<insert>`插入，`<update>`更新，`<delete>`删除，`<select>`查询。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`resultMap`的`id`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1665,6 +1813,7 @@
     "explanation": "答案解析：`<id>`标签用于映射主键字段，MyBatis会根据主键优化缓存和结果映射。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪种方式不能实现MyBatis的接口绑定？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -1677,6 +1826,7 @@
     "explanation": "答案解析：MyBatis通过动态代理自动生成接口实现类，无需手动编写。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<choose>`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1689,6 +1839,7 @@
     "explanation": "答案解析：`<choose>`包含`<when>`（if）和`<otherwise>`（else），实现多条件分支。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`SqlSessionFactory`的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1701,6 +1852,7 @@
     "explanation": "答案解析：`SqlSessionFactory`是`SqlSession`的工厂，负责创建`SqlSession`，线程安全。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`@Mapper`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1713,6 +1865,7 @@
     "explanation": "答案解析：`@Mapper`标注接口后，MyBatis会自动扫描并生成代理实现类，替代核心配置文件中的`<mappers>`配置。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<set>`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1725,6 +1878,7 @@
     "explanation": "答案解析：`<set>`在更新时使用，自动添加`SET`并去除末尾逗号，如`<set><if test=\"name != null\">name=#{name},</if></set>`。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个标签用于处理批量插入？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1737,6 +1891,7 @@
     "explanation": "答案解析：MyBatis无专门批量插入标签，通过`<insert>`结合`<foreach>`遍历集合实现，如`insert into user values <foreach collection=\"list\" item=\"u\" separator=\",\">(#{u.id},#{u.name})</foreach>`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`plugins`配置的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1749,6 +1904,7 @@
     "explanation": "答案解析：`plugins`用于注册拦截器（如PageHelper分页插件），拦截SQL执行过程。"
   },
   {
+    "module": "MyBatis",
     "question": "`resultMap`的`extends`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1761,6 +1917,7 @@
     "explanation": "答案解析：`extends`可继承另一个`resultMap`的配置，如`<resultMap id=\"userMap\" extends=\"baseMap\">`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`@Param`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1773,6 +1930,7 @@
     "explanation": "答案解析：如`User selectById(@Param(\"id\") int userId)`，映射文件中可用`#{id}`引用参数。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的映射文件中，`<delete>`标签的`parameterType`属性用于（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1785,6 +1943,7 @@
     "explanation": "答案解析：`parameterType`指定传入参数的类型（如`int`、`User`），可选，MyBatis可自动推断。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<trim>`标签不包含以下哪个属性？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1797,6 +1956,7 @@
     "explanation": "答案解析：`<trim>`的属性包括`prefix`（前缀）、`suffix`（后缀）、`prefixOverrides`（去除前缀内容）、`suffixOverrides`（去除后缀内容），无`loop`。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个注解用于在Mapper接口方法上定义查询SQL？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -1809,6 +1969,7 @@
     "explanation": "答案解析：`@Select(\"select * from user where id = #{id}\")`用于定义查询SQL，其他注解对应增删改。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<if>`标签的`test`属性用于（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1821,6 +1982,7 @@
     "explanation": "答案解析：`test`属性值为OGNL表达式，如`<if test=\"name != null and name != ''\">`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`resultType`和`resultMap`的关系是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1833,6 +1995,7 @@
     "explanation": "答案解析：简单类型映射用`resultType`，复杂映射（如关联查询）用`resultMap`，两者互斥。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`SqlSession`的`selectOne`方法的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1845,6 +2008,7 @@
     "explanation": "答案解析：`selectOne`返回单个对象，`selectList`返回集合；增删改用`insert`、`update`、`delete`。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪种不是MyBatis的分页方式？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1857,6 +2021,7 @@
     "explanation": "答案解析：MyBatis无`<page>`标签，分页可通过SQL、插件或`RowBounds`实现。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`typeHandlers`配置的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1869,6 +2034,7 @@
     "explanation": "答案解析：`typeHandlers`用于自定义类型转换（如Java的Date与数据库的VARCHAR转换）。"
   },
   {
+    "module": "MyBatis",
     "question": "当MyBatis查询结果为多个对象时，若使用`selectOne`方法会（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1881,6 +2047,7 @@
     "explanation": "答案解析：`selectOne`期望返回单个结果，若查询到多个，会抛出`TooManyResultsException`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的映射文件中，`<insert>`标签的`keyProperty`属性作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1893,6 +2060,7 @@
     "explanation": "答案解析：`keyProperty`与`useGeneratedKeys=\"true\"`配合，将数据库自动生成的主键值回写到JavaBean的指定属性（如`keyProperty=\"id\"`）。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪种情况适合使用`${}`而非`#{} `？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1905,6 +2073,7 @@
     "explanation": "答案解析：`${}`是字符串拼接，适合动态表名、排序字段等无法用预编译的场景；`#{} `是预编译占位符，防止SQL注入，适合参数传递。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<choose>`标签中，`<otherwise>`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1917,6 +2086,7 @@
     "explanation": "答案解析：`<choose>`类似Java的`switch`，`<when>`类似`case`，`<otherwise>`类似`default`，仅当所有`<when>`条件不满足时执行。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个标签用于在映射文件中定义接口方法与SQL的绑定？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1929,6 +2099,7 @@
     "explanation": "答案解析：映射文件的`namespace`与Mapper接口全类名一致，SQL标签的`id`与接口方法名一致，实现方法与SQL的绑定。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的二级缓存默认的清除策略（`eviction`）是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -1941,6 +2112,7 @@
     "explanation": "答案解析：`<cache eviction=\"LRU\"/>`是默认配置，当缓存满时，移除最近最少使用的对象；其他策略需显式指定。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<foreach>`标签中，`separator`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -1953,6 +2125,7 @@
     "explanation": "答案解析：`separator`用于设置循环生成的SQL片段之间的分隔符，如批量插入时的逗号（`separator=\",\"`）。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪种方式不能实现MyBatis的分页查询？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1965,6 +2138,7 @@
     "explanation": "答案解析：MyBatis无`<page>`标签，分页需通过原生SQL、`RowBounds`或第三方插件实现。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的映射文件中，`<selectKey>`标签的`order`属性取值为`BEFORE`时，表示（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -1977,6 +2151,7 @@
     "explanation": "答案解析：`order=\"BEFORE\"`表示先执行`<selectKey>`中的SQL获取主键，再代入插入语句（适合UUID等非自增主键）；`AFTER`表示插入后获取（适合自增主键）。"
   },
   {
+    "module": "MyBatis",
     "question": "关于MyBatis的`SqlSession`，以下说法错误的是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -1989,6 +2164,7 @@
     "explanation": "答案解析：`selectOne()`期望返回单个结果，若查询到多个会抛出`TooManyResultsException`；返回多个结果需用`selectList()`。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<trim>`标签中，`suffixOverrides`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2001,6 +2177,7 @@
     "explanation": "答案解析：`suffixOverrides=\",\"`表示去除SQL片段末尾的逗号，常用于动态`SET`或`IN`条件拼接。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个注解用于在Mapper接口方法上定义更新SQL？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2013,6 +2190,7 @@
     "explanation": "答案解析：`@Update(\"update user set name = #{name} where id = #{id}\")`用于定义更新SQL，是MyBatis的核心注解之一。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`mapper`接口方法参数为`Map`时，映射文件中引用参数的方式是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2025,6 +2203,7 @@
     "explanation": "答案解析：参数为`Map`时，直接通过`#{key}`引用Map中的值，如`Map<String, Object> params = new HashMap<>(); params.put(\"id\", 1);`，映射文件中用`#{id}`。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`@MapperScan`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2037,6 +2216,7 @@
     "explanation": "答案解析：`@MapperScan(\"com.example.mapper\")`替代在每个Mapper接口上标注`@Mapper`，批量扫描指定包下的接口。"
   },
   {
+    "module": "MyBatis",
     "question": "以下哪个标签用于在映射文件中引用其他SQL片段？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2049,6 +2229,7 @@
     "explanation": "答案解析：`<include refid=\"baseColumns\"/>`用于引用`<sql id=\"baseColumns\">id,name</sql>`定义的SQL片段，减少重复配置。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`lazyLoadingEnabled`全局配置的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2061,6 +2242,7 @@
     "explanation": "答案解析：`lazyLoadingEnabled=true`（默认`false`）开启全局延迟加载，关联对象在首次访问时才会查询数据库。"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<bind>`标签的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2073,6 +2255,7 @@
     "explanation": "答案解析：如`<bind name=\"likeName\" value=\"'%' + name + '%'\"/>`，后续可通过`#{likeName}`使用，解决不同数据库模糊查询语法差异。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`@Result`注解的`column`属性作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2085,6 +2268,7 @@
     "explanation": "答案解析：`@Result(column = \"user_name\", property = \"userName\")`表示数据库列`user_name`映射到JavaBean的`userName`属性。"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis中，#{}和${}都可以用于参数占位符，且都能防止SQL注入。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2095,6 +2279,7 @@
     "explanation": "答案解析：#{}可防止SQL注入${}是字符串拼接不能防止SQL注入"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis支持一对一、一对多和多对多的关联查询映射。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2104,6 +2289,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "在MyBatis中，使用`<insert>`标签插入数据后，无法获取自动生成的主键值。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2114,6 +2300,7 @@
     "explanation": "答案解析：可通过`useGeneratedKeys`和`keyProperty`属性获取自动生成的主键"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis中，当查询结果为单个对象时，若查询无结果，会抛出NullPointerException。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2124,6 +2311,7 @@
     "explanation": "答案解析：查询无结果时返回null不会抛出异常"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis是一个ORM框架，可简化JDBC操作。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2133,6 +2321,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "一级缓存默认开启，作用范围是整个应用。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2143,6 +2332,7 @@
     "explanation": "答案解析：一级缓存作用范围是SqlSession"
   },
   {
+    "module": "MyBatis",
     "question": "`<insert>`标签的`useGeneratedKeys=\"true\"`可用于获取数据库自动生成的主键。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2152,6 +2342,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的映射文件中，`namespace`必须与Mapper接口的全类名一致。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2161,6 +2352,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "二级缓存默认开启，需要手动配置才能生效。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2171,6 +2363,7 @@
     "explanation": "答案解析：二级缓存默认关闭需通过`<cache>`标签开启"
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<if>`标签中，`test`属性支持OGNL表达式。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2180,6 +2373,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`<collection>`标签用于处理一对一关联查询。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2190,6 +2384,7 @@
     "explanation": "答案解析：`<collection>`处理一对多`<association>`处理一对一"
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`SqlSession`是线程安全的，可在多线程中共享。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2200,6 +2395,7 @@
     "explanation": "答案解析：SqlSession线程不安全需为每个线程创建独立实例"
   },
   {
+    "module": "MyBatis",
     "question": "`@Mapper`注解用于标记接口为MyBatis的Mapper接口。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2209,6 +2405,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "二级缓存中，不同namespace的缓存是相互独立的。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2218,6 +2415,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`<trim>`标签的`prefix`属性用于给SQL片段添加前缀。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2227,6 +2425,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "当Mapper接口方法参数为多个时，必须使用`@Param`注解指定参数名。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2237,6 +2436,7 @@
     "explanation": "答案解析：否则无法在映射文件中正确引用"
   },
   {
+    "module": "MyBatis",
     "question": "`@ResultMap`注解用于引用XML中定义的`resultMap`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2246,6 +2446,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<foreach>`标签中，`item`属性用于指定循环变量名。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2255,6 +2456,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis支持通过接口方式和XML方式两种方式编写SQL。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2264,6 +2466,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`<set>`标签可自动去除SQL语句末尾多余的逗号。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2273,6 +2476,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`@Update`注解可直接在Mapper接口方法上定义更新SQL。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2282,6 +2486,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "映射文件中的`<sql>`标签用于定义可复用的SQL片段，通过`<include>`引用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2291,6 +2496,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`typeAliases`配置可给Java类型定义别名，简化映射文件编写。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2300,6 +2506,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<where>`标签会自动去除条件开头多余的`AND`或`OR`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2309,6 +2516,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`<foreach>`标签的`collection`属性在参数为List时，默认值是`list`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2318,6 +2526,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的`mapperLocations`配置用于指定映射文件的位置。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2327,6 +2536,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的一级缓存和二级缓存都默认开启。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2337,6 +2547,7 @@
     "explanation": "答案解析：一级缓存默认开启二级缓存默认关闭"
   },
   {
+    "module": "MyBatis",
     "question": "二级缓存的`flushInterval`属性用于指定缓存的最大容量。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2347,6 +2558,7 @@
     "explanation": "答案解析：`flushInterval`是自动刷新时间`size`是最大容量"
   },
   {
+    "module": "MyBatis",
     "question": "映射文件中的`<delete>`标签不需要指定返回值类型，默认返回受影响的行数。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2356,6 +2568,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis的插件可以修改SQL语句的执行逻辑。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2366,6 +2579,7 @@
     "explanation": "答案解析：，通过拦截器可增强或修改原逻辑"
   },
   {
+    "module": "MyBatis",
     "question": "当全局配置`mapUnderscoreToCamelCase=true`时，数据库列`user_name`会自动映射到Java属性`userName`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2375,6 +2589,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "一级缓存的生命周期与`SqlSession`一致，`SqlSession`关闭后缓存失效。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2384,6 +2599,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "动态SQL的`<when>`标签可以嵌套`<if>`标签。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2393,6 +2609,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "映射文件中的`resultType`和`resultMap`可以同时使用。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2403,6 +2620,7 @@
     "explanation": "答案解析：两者互斥只能选其一"
   },
   {
+    "module": "MyBatis",
     "question": "`@MapperScan`注解可以批量扫描指定包下的Mapper接口，替代每个接口上的`@Mapper`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2412,6 +2630,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "`<include>`标签的`refid`属性用于指定引用的SQL片段的`id`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2421,6 +2640,7 @@
     ]
   },
   {
+    "module": "MyBatis",
     "question": "MyBatis支持对存储过程的调用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2431,6 +2651,7 @@
     "explanation": "答案解析：通过`<select>`标签的`statementType=\"CALLABLE\"`实现"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的核心理念是（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2441,6 +2662,7 @@
     "explanation": "答案解析：Spring Boot通过“约定优于配置”简化开发，提供默认配置，减少手动配置。"
   },
   {
+    "module": "SpringBoot",
     "question": "创建Spring Boot项目的常用工具是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2453,6 +2675,7 @@
     "explanation": "答案解析：Spring Initializr是官方推荐的项目创建工具，支持网页、IDEA等方式，自动生成骨架。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的入口类需添加哪个注解？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2465,6 +2688,7 @@
     "explanation": "答案解析：入口类需标注`@SpringBootApplication`，该注解包含`@SpringBootConfiguration`、`@EnableAutoConfiguration`、`@ComponentScan`。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot默认内置的Web服务器是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2477,6 +2701,7 @@
     "explanation": "答案解析：默认内置Tomcat，可通过排除依赖切换为Jetty或Undertow。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot项目的配置文件默认名称不包括（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -2489,6 +2714,7 @@
     "explanation": "答案解析：默认配置文件为`application.properties`、`application.yaml`、`application.yml`，无`springboot.config`。"
   },
   {
+    "module": "SpringBoot",
     "question": "启动Spring Boot应用的方式不包括（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -2501,6 +2727,7 @@
     "explanation": "答案解析：`maven\n              install`是打包命令，不启动应用；启动需`spring-boot:run`或直接运行可执行JAR。"
   },
   {
+    "module": "SpringBoot",
     "question": "`@Value`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2513,6 +2740,7 @@
     "explanation": "答案解析：`@Value(\"${app.name}\")`用于注入配置文件中的属性值，支持默认值（如`${app.name:default}`）。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`spring-boot-starter-parent`的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2525,6 +2753,7 @@
     "explanation": "答案解析：`spring-boot-starter-parent`作为父依赖，管理常用依赖的版本，避免版本冲突。"
   },
   {
+    "module": "SpringBoot",
     "question": "配置文件中，修改默认服务器端口的属性是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2537,6 +2766,7 @@
     "explanation": "答案解析：通过`server.port=8081`修改端口，默认8080。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`devtools`依赖的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2549,6 +2779,7 @@
     "explanation": "答案解析：`spring-boot-devtools`提供热部署，修改代码后自动重启应用（快速重启）。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪个不是Spring Boot的Starter依赖？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -2561,6 +2792,7 @@
     "explanation": "答案解析：Starter是一组依赖的集合，`spring-boot-starter-web`包含Web相关依赖，无`spring-boot-starter-servlet`（servlet是Web的一部分）。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot项目打包为可执行JAR的插件是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2573,6 +2805,7 @@
     "explanation": "答案解析：`spring-boot-maven-plugin`负责将项目打包为可执行JAR，包含依赖和启动类。"
   },
   {
+    "module": "SpringBoot",
     "question": "激活不同环境配置（如dev、prod）的属性是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2585,6 +2818,7 @@
     "explanation": "答案解析：通过`spring.profiles.active=dev`激活`application-dev.properties`配置。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的测试类通常使用哪个注解？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2597,6 +2831,7 @@
     "explanation": "答案解析：`@SpringBootTest`用于Spring Boot测试，会加载应用上下文，支持自动注入Bean。"
   },
   {
+    "module": "SpringBoot",
     "question": "静态资源默认存放目录不包括（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2609,6 +2844,7 @@
     "explanation": "答案解析：`templates`是模板文件（如Thymeleaf）存放目录，静态资源目录为static、public、resources。"
   },
   {
+    "module": "SpringBoot",
     "question": "`application.yaml`与`application.properties`的区别是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2621,6 +2857,7 @@
     "explanation": "答案解析：两者功能相同，语法不同；优先级与格式无关，取决于文件位置。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪个依赖用于Spring Boot的Web开发？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2633,6 +2870,7 @@
     "explanation": "答案解析：`spring-boot-starter-web`包含Spring MVC、Tomcat等Web开发所需依赖。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot应用的默认上下文路径（ ）ontext Path）是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2645,6 +2883,7 @@
     "explanation": "答案解析：默认上下文路径为`/`，可通过`server.servlet.context-path=/api`修改。"
   },
   {
+    "module": "SpringBoot",
     "question": "`@RestController`注解相比`@Controller`的区别是（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -2657,6 +2896,7 @@
     "explanation": "答案解析：`@RestController` = `@Controller` +\n              `@ResponseBody`，适合RESTful接口，返回JSON等数据，不经过视图解析。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot中，关闭特定自动配置的注解属性是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2669,6 +2909,7 @@
     "explanation": "答案解析：`@SpringBootApplication`包含`@EnableAutoConfiguration`，两者的`exclude`属性均可关闭特定自动配置。"
   },
   {
+    "module": "SpringBoot",
     "question": "配置文件中，设置日志级别为DEBUG的属性是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2681,6 +2922,7 @@
     "explanation": "答案解析：通过`logging.level.root=DEBUG`设置全局日志级别，`logging.level.com.example=DEBUG`设置指定包级别。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的自动配置原理中，核心配置文件是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2693,6 +2935,7 @@
     "explanation": "答案解析：`spring.factories`文件中配置了自动配置类的全类名，Spring Boot启动时扫描并加载。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪个不是Spring Boot的核心特性？（ ） ）",
     "type": "choice",
     "answer": "D",
@@ -2705,6 +2948,7 @@
     "explanation": "答案解析：Spring Boot不提供ORM实现，需通过Starter集成MyBatis、JPA等。"
   },
   {
+    "module": "SpringBoot",
     "question": "配置文件中，设置连接超时时间的属性是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2717,6 +2961,7 @@
     "explanation": "答案解析：`server.connection-timeout=30000`设置连接超时时间（毫秒）。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪个注解用于标记配置类？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2729,6 +2974,7 @@
     "explanation": "答案解析：`@Configuration`标记类为配置类，内部可通过`@Bean`定义Bean。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot中，`@Bean`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2741,6 +2987,7 @@
     "explanation": "答案解析：`@Bean`用于配置类中，方法返回值作为Bean注册到容器中。"
   },
   {
+    "module": "SpringBoot",
     "question": "外部化配置的优先级从高到低排序正确的是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2753,6 +3000,7 @@
     "explanation": "答案解析：Spring Boot外部化配置优先级：命令行参数 > 系统环境变量 > 配置文件等。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`@EnableAutoConfiguration`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2765,6 +3013,7 @@
     "explanation": "答案解析：`@EnableAutoConfiguration`是`@SpringBootApplication`的组成部分，负责开启自动配置。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪个依赖用于Spring Boot的测试？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2777,6 +3026,7 @@
     "explanation": "答案解析：`spring-boot-starter-test`包含JUnit、Mockito、Spring\n              Test等测试相关依赖。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot中，默认的JSON处理器是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -2789,6 +3039,7 @@
     "explanation": "答案解析：默认集成Jackson处理JSON，可通过排除依赖切换为Gson等。"
   },
   {
+    "module": "SpringBoot",
     "question": "配置文件中，设置应用名称的属性是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2801,6 +3052,7 @@
     "explanation": "答案解析：`spring.application.name=myapp`设置应用名称，用于日志、监控等标识。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`@ComponentScan`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2813,6 +3065,7 @@
     "explanation": "答案解析：`@ComponentScan`指定扫描路径，默认扫描入口类所在包及子包。"
   },
   {
+    "module": "SpringBoot",
     "question": "以下哪种方式不能修改Spring Boot的默认配置？（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -2825,6 +3078,7 @@
     "explanation": "答案解析：`@DisableAutoConfiguration`会禁用所有自动配置，不符合“修改默认配置”的需求；应针对性排除。"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`Banner`（启动标语）可通过哪个属性关闭？（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -2837,6 +3091,7 @@
     "explanation": "答案解析：`spring.banner.enabled=false`关闭启动时的Banner标语。"
   },
   {
+    "module": "SpringBoot",
     "question": "创建Spring Boot项目时，必须手动导入所有依赖包。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2847,6 +3102,7 @@
     "explanation": "答案解析：可通过Spring Initializr自动导入所需依赖或在pom.xml中配置依赖坐标"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring\n                Boot应用的入口类需添加`@SpringBootApplication`注解，该注解包含了`@SpringBootConfiguration`、`@EnableAutoConfiguration`和`@ComponentScan`。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2856,6 +3112,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot默认内置了Tomcat服务器，无需额外配置即可运行Web应用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2865,6 +3122,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot的`application.properties`配置文件只能放在src/main/resources目录下。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2875,6 +3133,7 @@
     "explanation": "答案解析：还可放在src/main/resources/config目录、类路径根目录等位置且优先级不同"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot中，使用`@Value`注解可以读取配置文件中的属性值。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2884,6 +3143,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot默认支持RESTful风格的接口开发。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2893,6 +3153,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "创建Spring Boot Web项目时，必须手动配置DispatcherServlet。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2903,6 +3164,7 @@
     "explanation": "答案解析：Spring Boot自动配置DispatcherServlet无需手动配置"
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot应用打包成JAR包后，无法直接运行，需部署到外部服务器。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -2913,6 +3175,7 @@
     "explanation": "答案解析：JAR包内置服务器可通过`java -jar`命令直接运行"
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 的 ` ` 标签用于定义可重用的 SQL 片段，通过 ` ` 标签引入使用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2922,6 +3185,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "动态 SQL 中的 ` ` 标签可以自动去除其内部 SQL 语句开头的多余 AND 或 OR 关键字。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2931,6 +3195,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "` ` 标签用于在插入数据时获取非自增主键的值，支持前置和后置获取两种方式。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2940,6 +3205,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 的 Mapper 接口是通过 JDK 动态代理生成实现类的，无需手动编写实现代码。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2949,6 +3215,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "动态 SQL 中的 ` ` 标签常用于遍历集合参数，生成 IN 条件语句或批量插入语句。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2958,6 +3225,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 的二级缓存是 Mapper 级别的缓存，多个 SqlSession 可共享同一 Mapper 的缓存数据。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2967,6 +3235,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "` ` 中的 ` ` 标签用于指定主键字段，MyBatis 会根据主键进行结果去重处理。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2976,6 +3245,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 被称为半自动 ORM 框架，是因为其查询关联对象时需要手动编写 SQL 语句。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2985,6 +3255,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "动态 SQL 的执行原理是通过 OGNL 表达式计算参数值，根据结果动态拼接 SQL 语句。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -2994,6 +3265,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 中，`SqlSessionFactory` 是线程安全的，而 `SqlSession` 是非线程安全的。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3003,6 +3275,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis的` ` 标签在更新操作中使用，可自动去除 SQL 语句末尾多余的逗号。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3012,6 +3285,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 的 `mapper` 配置文件中，`namespace` 属性的值必须与对应的 Mapper 接口的全类名一致。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3021,6 +3295,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "二级缓存需要实体类实现 `Serializable` 接口，否则无法进行序列化存储。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3030,6 +3305,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "动态 SQL 中的 ` `、` `、` ` 标签组合使用，相当于 Java 中的 if-else if-else 逻辑。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3039,6 +3315,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "使用 `@Mapper` 注解标注 Mapper 接口，可替代在核心配置文件中配置 ` ` 标签。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3048,6 +3325,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "MyBatis 的一级缓存默认开启，当 SqlSession 关闭后，一级缓存中的数据会被清除。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3057,6 +3335,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Initializr 是创建 Spring Boot 项目的常用工具，支持通过网页、IDEA 等多种方式使用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3066,6 +3345,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 项目的 `pom.xml` 中，`spring-boot-starter-parent` 作为父依赖，提供了统一的依赖版本管理。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3075,6 +3355,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "`application.yml` 配置文件采用缩进表示层级关系，相比 `application.properties` 更易读。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3084,6 +3365,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 支持通过 `spring.profiles.active` 配置激活不同环境的配置文件，如 dev、test、prod。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3093,6 +3375,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "使用 `@SpringBootTest` 注解可以进行 Spring Boot 应用的单元测试和集成测试。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3102,6 +3385,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 项目打包为 WAR 包时，需在入口类中继承 `SpringBootServletInitializer` 并重写 `configure`\n                方法。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3111,6 +3395,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "`@ConfigurationProperties` 注解可以将配置文件中的属性批量绑定到实体类对象中。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3120,6 +3405,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 默认的服务器端口是 8080，可通过 `server.port` 配置修改。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3129,6 +3415,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "启动 Spring Boot 应用时，通过 `--spring.profiles.active=dev` 命令行参数可指定激活 dev 环境配置。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3138,6 +3425,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 的 `spring-boot-devtools` 依赖提供了热部署功能，可加速开发过程。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3147,6 +3435,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 项目中，静态资源默认存放于 `src/main/resources/static`、`public`、`resources` 目录下。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3156,6 +3445,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "`application.properties` 中，配置属性的键名不区分大小写，如 `server.port` 和 `SERVER.PORT` 效果相同。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3165,6 +3455,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "使用 `spring-boot-maven-plugin` 插件可以将 Spring Boot 项目打包为可执行 JAR 包。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3174,6 +3465,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 自动配置的本质是根据类路径下的依赖自动注册对应的 Bean。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3183,6 +3475,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 应用可通过 `SpringApplication.run（ ）pplication.class, args)` 方法启动。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3192,6 +3485,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "不同位置的配置文件优先级不同，`src/main/resources/config` 目录下的配置文件优先级高于 `src/main/resources`\n                目录。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3201,6 +3495,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "Spring Boot 支持通过 `logging.level.root` 配置全局日志级别，如 DEBUG、INFO、ERROR。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3210,6 +3505,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "创建 Spring Boot Web 项目时，引入 `spring-boot-starter-web` 依赖即可自动集成 Spring MVC 和\n                Tomcat。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3219,6 +3515,7 @@
     ]
   },
   {
+    "module": "SpringBoot",
     "question": "`@RestController` 注解是 `@Controller` 和 `@ResponseBody` 注解的组合。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3228,6 +3525,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnClass`注解的作用是（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3238,6 +3536,7 @@
     "explanation": "答案解析：`@ConditionalOnClass(DataSource.class)`表示类路径有`DataSource`时，配置生效。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot Actuator的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3250,6 +3549,7 @@
     "explanation": "答案解析：Actuator提供端点（如`/health`、`/info`）用于监控应用健康、指标等。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnMissingBean`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3262,6 +3562,7 @@
     "explanation": "答案解析：用于自动配置中，确保用户自定义Bean优先于默认Bean（用户定义后，默认Bean不注册）。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 2.x默认使用的数据源是（ ） ）",
     "type": "choice",
     "answer": "C",
@@ -3274,6 +3575,7 @@
     "explanation": "答案解析：Spring Boot 2.x默认使用HikariCP，性能优于传统数据源。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot整合MyBatis时，需引入的Starter依赖是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3286,6 +3588,7 @@
     "explanation": "答案解析：官方Starter为`mybatis-spring-boot-starter`，提供自动配置。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnProperty`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3298,6 +3601,7 @@
     "explanation": "答案解析：`@ConditionalOnProperty(name =\n              \"spring.datasource.enabled\", havingValue = \"true\")`表示属性匹配时生效。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Actuator的端点路径默认前缀是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3310,6 +3614,7 @@
     "explanation": "答案解析：默认端点路径为`/actuator/health`、`/actuator/info`等，可通过`management.endpoints.web.base-path`修改。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@SpringBootConfiguration`注解的本质是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3322,6 +3627,7 @@
     "explanation": "答案解析：`@SpringBootConfiguration`是`@Configuration`的特殊形式，标识当前类为Spring Boot配置类。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnWebApplication`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3334,6 +3640,7 @@
     "explanation": "答案解析：用于Web相关自动配置（如`DispatcherServletAutoConfiguration`），仅在Web应用中生效。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot的`DataSourceAutoConfiguration`的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3346,6 +3653,7 @@
     "explanation": "答案解析：根据类路径下的驱动和配置（`spring.datasource.*`）自动配置数据源。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@EnableConfigurationProperties`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3358,6 +3666,7 @@
     "explanation": "答案解析：需配合`@ConfigurationProperties`使用，使属性绑定生效（如`@EnableConfigurationProperties(UserProperties.class)`）。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnMissingClass`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3370,6 +3679,7 @@
     "explanation": "答案解析：与`@ConditionalOnClass`相反，类路径无指定类时配置生效。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot整合Spring Data JPA时，需引入的Starter依赖是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3382,6 +3692,7 @@
     "explanation": "答案解析：官方Starter为`spring-boot-starter-data-jpa`，自动配置JPA相关Bean。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnExpression`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3394,6 +3705,7 @@
     "explanation": "答案解析：`@ConditionalOnExpression(\"${spring.cache.enabled:true} &&\n              '${spring.cache.type}' != 'none'\")`通过SpEL表达式判断。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot的自动配置类通常位于哪个依赖中？（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3406,6 +3718,7 @@
     "explanation": "答案解析：`spring-boot-autoconfigure`包含大部分自动配置类，是核心依赖。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@AutoConfigureOrder`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3418,6 +3731,7 @@
     "explanation": "答案解析：`@AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE)`指定配置类优先加载。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConfigurationProperties`的`prefix`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3430,6 +3744,7 @@
     "explanation": "答案解析：`@ConfigurationProperties(prefix =\n              \"user\")`绑定`user.name`、`user.age`等属性到实体类。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@Conditional`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3442,6 +3757,7 @@
     "explanation": "答案解析：`@Conditional(MyCondition.class)`，`MyCondition`实现`Condition`接口，自定义判断逻辑。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot整合Redis时，需引入的Starter依赖是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3454,6 +3770,7 @@
     "explanation": "答案解析：官方Starter为`spring-boot-starter-data-redis`，自动配置`RedisTemplate`等。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "自动配置类的命名规范通常是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3466,6 +3783,7 @@
     "explanation": "答案解析：自动配置类通常以`XxxAutoConfiguration`命名（如`DataSourceAutoConfiguration`）。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnResource`注解的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3478,6 +3796,7 @@
     "explanation": "答案解析：`@ConditionalOnResource(resources =\n              \"classpath:application-dev.properties\")`表示资源存在时生效。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot中，配置Jackson日期格式的属性是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3490,6 +3809,7 @@
     "explanation": "答案解析：通过`spring.jackson.date-format`配置JSON日期序列化格式。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@EnableAutoConfiguration`注解的`excludeName`属性用于（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3502,6 +3822,7 @@
     "explanation": "答案解析：`exclude`接收Class对象，`excludeName`接收全类名字符串（如`excludeName =\n              \"org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration\"`）。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Actuator的`/shutdown`端点的作用是（ ） ）",
     "type": "choice",
     "answer": "B",
@@ -3514,6 +3835,7 @@
     "explanation": "答案解析：`/shutdown`默认关闭，开启后通过POST请求可优雅关闭应用。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot的`@Bean`方法的`initMethod`和`destroyMethod`属性的作用是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3526,6 +3848,7 @@
     "explanation": "答案解析：`@Bean(initMethod = \"init\", destroyMethod =\n              \"destroy\")`指定初始化和销毁方法。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "整合Thymeleaf模板引擎时，需引入的Starter依赖是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3538,6 +3861,7 @@
     "explanation": "答案解析：官方Starter为`spring-boot-starter-thymeleaf`，自动配置Thymeleaf。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 2.x中，配置应用类型为非Web应用的属性是（ ） ）",
     "type": "choice",
     "answer": "A",
@@ -3550,6 +3874,7 @@
     "explanation": "答案解析：`web-application-type`可选值：`SERVLET`（默认）、`REACTIVE`、`none`（非Web）。"
   },
   {
+    "module": "SpringBoot核心",
     "question": "在Spring Boot中，若需禁用某个自动配置类，可使用`@SpringBootApplication`注解的`exclude`属性。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3559,6 +3884,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot中，使用`@Configuration`和`@Bean`注解可以替代XML配置，实现Bean的定义。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3568,6 +3894,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot Actuator可以监控和管理Spring Boot应用，默认开启所有监控端点。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -3578,6 +3905,7 @@
     "explanation": "答案解析：默认只开启/health和/info端点其他端点需手动配置开启"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot支持多种配置文件格式，包括properties、yaml和yml，其中yaml格式的配置文件优先级最高。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -3588,6 +3916,7 @@
     "explanation": "答案解析：配置文件优先级与格式无关与文件位置和加载顺序有关"
   },
   {
+    "module": "SpringBoot核心",
     "question": "在Spring Boot中，使用`@RestController`注解的类，其方法返回值默认会被转换为JSON格式。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3598,6 +3927,7 @@
     "explanation": "答案解析：`@RestController`包含`@Controller`和`@ResponseBody`，`@ResponseBody`指定返回值为响应体，默认转JSON"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot的外部化配置中，命令行参数的优先级高于配置文件的优先级。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3607,6 +3937,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot中，整合MyBatis时，必须手动配置SqlSessionFactory和SqlSessionTemplate。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -3617,6 +3948,7 @@
     "explanation": "答案解析：通过mybatis-spring-boot-starter依赖可实现自动配置无需手动配置"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 2.x版本默认使用的ORM框架是JPA，而非MyBatis。（ ） ）",
     "type": "judge",
     "answer": "F",
@@ -3627,6 +3959,7 @@
     "explanation": "答案解析：Spring Boot默认不强制指定ORM框架JPA和MyBatis需通过对应Starter依赖引入后使用"
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 的自动配置类通常位于 `spring-boot-autoconfigure` 依赖的 `META-INF/spring.factories`\n                文件中。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3636,6 +3969,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnClass` 注解表示当类路径下存在指定类时，才会生效对应的自动配置。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3645,6 +3979,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 整合 MyBatis 时，引入 `mybatis-spring-boot-starter` 依赖即可实现自动配置。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3654,6 +3989,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot外部化配置中，系统环境变量的优先级高于配置文件的优先级。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3663,6 +3999,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@EnableAutoConfiguration` 注解用于开启 Spring Boot 的自动配置功能。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3672,6 +4009,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnWebApplication` 注解表示当应用是 Web 应用时，自动配置才会生效。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3681,6 +4019,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 2.x 中，默认使用 HikariCP 作为数据源，相比传统数据源性能更优。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3690,6 +4029,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "自动配置类可以通过 `@AutoConfigureAfter` 注解指定在某个配置类之后加载。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3699,6 +4039,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 中，可通过 `spring.datasource` 前缀配置数据源的 URL、用户名、密码等信息。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3708,6 +4049,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot Actuator 需引入 `spring-boot-starter-actuator` 依赖才能使用。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3717,6 +4059,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@SpringBootConfiguration` 注解本质上是 `@Configuration` 注解的特殊形式，标识当前类为配置类。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3726,6 +4069,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "整合 Spring Data JPA 时，引入 `spring-boot-starter-data-jpa` 依赖即可实现自动配置。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3735,6 +4079,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "`@ConditionalOnProperty` 注解表示当配置文件中存在指定属性且值匹配时，自动配置才会生效。（（ ）",
     "type": "judge",
     "answer": "T",
@@ -3744,6 +4089,7 @@
     ]
   },
   {
+    "module": "SpringBoot核心",
     "question": "Spring Boot 支持通过 `spring.jackson.date-format` 配置 JSON 格式日期的序列化方式。（（ ）",
     "type": "judge",
     "answer": "T",
